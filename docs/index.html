@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmyShow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            background-color: #ee3d3d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ea5b5b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>bookmyShow</h1>
+    </header>
+
+    <nav>
+        <a href="page02.html">Movies</a>
+        <a href="page03.html">Bookings</a>
+    </nav>
+
+    <main>
+        <h2>Welcome to the BookMyShow Portal</h2>
+        <p>This is the home page content.</p>
+    </main>
+
+    <script>
+        function showMovies() {
+            document.getElementById('moviesPage').style.display = 'block';
+            document.getElementById('bookingsPage').style.display = 'none';
+        }
+
+        function showBookings() {
+            document.getElementById('moviesPage').style.display = 'none';
+            document.getElementById('bookingsPage').style.display = 'block';
+        }
+
+        function showBookingForm(movieTitle) {
+            alert(`Booking form for ${movieTitle}`);
+        }
+    </script>
+
+</body>
+</html>
