@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header{
+            background-color: #ee3d3d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main{
+            padding: 20px;
+        }
+        nav {
+            background-color: #ea5b5b;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .movie{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .movies{
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0 0 5px rgba;
+            background-color: white;
+        }
+        .movie-title{
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .book-button{
+            background-color: rgb(237, 73, 73);
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>bookmyShow</h1>
+    </header>
+    <nav>
+        <a href="index.html">Go back to Portal</a>
+        <a href="page03.html">Bookings</a>
+    </nav>
+    <main>
+    <div class="movie">
+        <div class="movies">
+            <img src="movie1.jpg" alt="Movie 1" class="movie-image">
+            <div class="movie-title">Movie1</div>
+           <a href="page03.html"><button class="book-button" onclick="showBookingForm('Movie 1')">Book Now</button></a> 
+        </div>
+        <div class="movies">
+            <img src="movie2.jpg" alt="Movie 2" class="movie-image">
+            <div class="movie-title">Movie2</div>
+            <a href="page03.html"><button class="book-button" onclick="showBookingForm('Movie 2')">Book Now</button></a>
+        </div>
+        <div class="movies">
+            <img src="movie3.jpg" alt="Movie 3" class="movie-image">
+            <div class="movie-title">Movie3</div>
+            <a href="page03.html"><button class="book-button" onclick="showBookingForm('Movie 3')">Book Now</button></a>
+        </div>
+        <div class="movies">
+            <img src="movie4.jpg" alt="Movie 4" class="movie-image">
+            <div class="movie-title">Movie4</div>
+            <a href="page03.html"><button class="book-button" onclick="showBookingForm('Movie 4')">Book Now</button></a>
+        </div>
+        <div class="movies">
+            <img src="movie5.jpg" alt="Movie 5" class="movie-image">
+            <div class="movie-title">Movie5</div>
+            <a href="page03.html"><button class="book-button" onclick="showBookingForm('Movie 5')">Book Now</button></a>
+        </div>
+        <div class="movies">
+            <img src="movie6.jpg" alt="Movie 6" class="movie-image">
+            <div class="movie-title">Movie6</div>
+            <a href="page03.html"><button class="book-button" onclick="showBookingForm('Movie 6')">Book Now</button></a>
+        </div>
+    </div>
+    
+</main>
+</body>
+</html>
